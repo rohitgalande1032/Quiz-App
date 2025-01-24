@@ -7,16 +7,15 @@
     <title>Quiz App</title>
   </head>
   <body>
-    <nav>
+    <nav style="width: 90%; margin: auto;">
       <div class="logo">
         <h1>Quiz App</h1>
       </div>
     </nav>
 
-    <main>
+    <main id="main-container">
       <div class="container">
         <div class="main-content">
-          <div class="main-img"><img src="./images/small2.jpg" /></div>
           <p class="slogan">
             Test Your Wits, Ace the Quiz! <br />Know More, Score More
           </p>
@@ -24,44 +23,60 @@
             RANDOM QUIZ
             <span style="font-size: 18px; font-weight: 900">&rarr;</span>
           </button>
+          <div class="small-screen-img" id="small-screen-img"><img src="./images/small2.jpg" /></div>
           <p class="text">PLAY, LEARN AND ENJOY</p>
-          <div class="quiz-container">
-            <div class="box">
-              <img src="./images/indian_history.png" />
-              <button data-section="0">Indian History</button>
-            </div>
-            <div class="box">
-              <img src="./images/general-knowledge.jpg" />
-              <button data-section="1">G.K</button>
-            </div>
-            <div class="box">
-              <img src="./images/Science.png" />
-              <button data-section="2">Science</button>
-            </div>
-            <div class="box">
-              <img src="./images/mathematics.jpg" />
-              <button data-section="3">Mathematics</button>
-            </div>
-            <div class="box">
-              <img src="./images/indian-geography.avif" />
-              <button data-section="4">Ind Geography</button>
-            </div>
-            <div class="box">
-              <img src="./images/indian-literature.jpg" />
-              <button data-section="5">Indian Lit</button>
-            </div>
-            <div class="box">
-              <img src="./images/indian_history.png" />
-              <button data-section="6">World History</button>
-            </div>
-            <div class="box">
-              <img src="./images/technology.jpg" />
-              <button data-section="7">Technology</button>
-            </div>
+        </div>
+        <div class="quiz-container">
+          <div class="box" data-section="0">
+            <img src="./images/indian_history.png" />
+            <button >Indian History</button>
+          </div>
+          <div class="box" data-section="1">
+            <img src="./images/general-knowledge.jpg" />
+            <button >G.K</button>
+          </div>
+          <div class="box" data-section="2">
+            <img src="./images/Science.png" />
+            <button >Science</button>
+          </div>
+          <div class="box" data-section="3">
+            <img src="./images/mathematics.jpg" />
+            <button >Mathematics</button>
+          </div>
+          <div class="box" data-section="4">
+            <img src="./images/indian-geography.avif" />
+            <button >Ind Geography</button>
+          </div>
+          <div class="box" data-section="5">
+            <img src="./images/indian-literature.jpg" />
+            <button >Indian Lit</button>
+          </div>
+          <div class="box" data-section="6">
+            <img src="./images/indian_history.png" />
+            <button >World History</button>
+          </div>
+          <div class="box" data-section="7">
+            <img src="./images/technology.jpg" />
+            <button >Technology</button>
           </div>
         </div>
+
       </div>
     </main>
+
+    <div class="question-container" style="display: none;">
+      <div class="questions-content">
+            
+      </div>
+      <div class="options">
+          <ul>
+
+          </ul>
+          <p class="right">Correct Answer!</p>
+          <p class="wrong"></p>
+          <button class="next-btn">Next</button>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>
